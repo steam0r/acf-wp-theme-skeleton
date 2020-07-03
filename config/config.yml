@@ -2,10 +2,11 @@ config:
   theme:
     slug: acf-wp-theme-skeleton
   release:
-    check: enabled
-    repository:
+    check: true
+    repository: "https://github.com/steam0r/acf-wp-theme-skeleton.git"
     token: "<YOUR GITHUB TOKEN>"
   site:
     create_pages: true
   admin:
     show_acf: true
+    hide_editor: true

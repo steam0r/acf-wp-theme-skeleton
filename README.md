@@ -10,6 +10,7 @@
 ## installation
 - `nvm use`
 - `npm install`
+- `npm run build`
 
 ## configuration
 - put your acf pro key in `.env`
@@ -19,16 +20,21 @@
 - - `config.release.token`, put your github token here
 - - `config.site.create_pages`, enable this to assure pages in pages.yml are being created
 - - `config.admin.show_acf`, enable this to show the acf admin-menu entry
+- - `config.admin.hide_editor`, hide the guttenberg editor in the editing of pages (stays for blog posts)
 - edit `style.css` to put your theme name and info there
 
 ## development
 
 ### run docker image
 - `docker-compose up`
-- make sure `config/fieldgroups` is writable (`chmod 777 config fieldgroups`)
+- make sure `config/fieldgroups` is writable (`chmod 777 config/fieldgroups`)
+- make sure `config/fieldgroups/*.json` are writable (`chmod 666 config/fieldgroups/*.json`)
+- first time:
+- - go to `localhost:8080`, install wordpress
+- - log in, activate theme
 
 ### run watch task
-- `grunt dev`
+- `npm run watch` or `grunt dev`
 
 ### structure
 
@@ -69,14 +75,27 @@
 - `TemplateEngine.php`, used to render templates, currently plain php, could be twig or whatever
 - `Theme.php`, initializes the theme, is called in `functions.php`, put custom hooks and actions here or in `Backend.php`
 
+## add new layouts
+
+- open `http://localhost:8080/wp-admin/edit.php?post_type=acf-field-group`
+- edit the `Content` fieldgroup
+- edit the `Contentblocks` field
+- add a `Layout` with your required fields, name it i.e. `newlayout` (in the "Name" field)
+- create `resources/templates/patials/newlayout.php`
+- create `resources/scss/components/_newlayout.scss` (notice the underscore)
+- add `@import "textblock";` to `resources/scss/components/_components.scss`
+- add some html to the php-file, preferrably suround it with a `<div class="newlayout"></div>`
+- add some styles to the scss file, contained into `.newlayout {}`
+- add the new layout to any wordpress page using the "add row" button in the ACF module on the page editor 
+
 ## release
 
 ## build release locally
-- `grunt package`
+- `npm run package` or `grunt package`
 - `ls -a target/`
+- theme is in `target/target.zip`
 
 ## build release on github
-- `grunt release`
+- `npm run release` or `grunt release` (increments patch version number by 1, you can use `npm run release:minor` and `npm run release:major`)
 - `git checkout -b release/<versionnumber>`
 - `git push`
-

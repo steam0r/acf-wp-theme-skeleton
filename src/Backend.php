@@ -49,10 +49,10 @@ class Backend
 
   public function init()
   {
-    if (!$this->theme->getConfig()->site->create_pages) {
+    if ($this->theme->getConfig()->site->create_pages) {
       add_action('init', array($this, 'check_pages'));
     }
-    if (!$this->theme->getConfig()->admin->show_acf) {
+    if ($this->theme->getConfig()->admin->hide_editor) {
       add_action('admin_init', array($this, 'hide_editor'));
     }
     add_action('admin_init', array($this, 'acf_enabled'));

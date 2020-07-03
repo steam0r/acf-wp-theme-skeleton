@@ -1,8 +1,11 @@
 .htaccess
-node_modules
-config/config.php
+node_modules/
 target/
 .idea/
 *.iml
 vendor/
+public/css/stylesheet.css
+public/js/app.min.js
+public/js/helper.min.js
+public/js/libraries.min.js
 release.json

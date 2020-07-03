@@ -2,6 +2,15 @@
   "name": "acf-wp-theme-skeleton",
   "version": "1.0.0",
   "private": true,
+  "scripts": {
+    "build": "grunt build",
+    "watch": "grunt dev",
+    "package": "grunt package",
+    "release": "grunt release",
+    "release:minor": "grunt release:minor",
+    "release:major": "grunt release:major",
+    "release:patch": "grunt release:patch"
+  },
   "devDependencies": {
     "autoprefixer": "9.7.4",
     "node-sass": "4.13.1",
