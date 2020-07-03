@@ -1,0 +1,9 @@
+// styles for different pages go here (i.e. landingpage has different background color as all the other pages)
+
+.about {
+  @include tablet-portrait-and-below() {
+    .disruptor {
+      display: none;
+    }
+  }
+}

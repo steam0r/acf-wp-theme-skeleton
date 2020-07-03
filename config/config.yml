@@ -1,0 +1,11 @@
+config:
+  theme:
+    slug: acf-wp-theme-skeleton
+  release:
+    check: enabled
+    repository:
+    token: "<YOUR GITHUB TOKEN>"
+  site:
+    create_pages: true
+  admin:
+    show_acf: true

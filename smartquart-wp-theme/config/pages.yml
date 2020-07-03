@@ -1,0 +1,74 @@
+home:
+  order: 0
+  title: "Start"
+  url: /
+about:
+  order: 1
+  title: "Über SmartQuart"
+  url: /ueber/
+quartiere:
+  order: 2
+  title: "Quartiere"
+  url: "/quartiere/"
+  pages:
+    essen:
+      order: 3
+      title: "Essen"
+      url: /essen/
+    bedburg:
+      order: 4
+      title: "Bedburg"
+      url: /bedburg/
+    kaisersesch:
+      order: 5
+      title: "Kaisersesch"
+      url: /kaisersesch/
+blog:
+  order: 6
+  title: "Blog"
+  url: /blog/
+mitmachen:
+  order: 7
+  title: "Mitmachen"
+  url: /mitmachen/
+presse:
+  order: 8
+  title: "Presse"
+  url: /presse/
+partner:
+  order: 9
+  title: "Partner"
+  url: /partner/
+kontakt:
+  order: 10
+  title: "Kontakt"
+  url: /kontakt/
+datenschutz:
+  order: -1
+  title: "Datenschutz"
+  url: /datenschutz/
+elektrisch:
+  order: -1
+  title: "Elektrisch"
+  url: /elektrisch/
+impressum:
+  order: -1
+  title: "Impressum"
+  url: /impressum/
+disclaimer:
+  order: -1
+  title: "Disclaimer"
+  url: /disclaimer/
+interaktiv:
+  order: -1
+  title: "Interaktiv"
+  url: /interaktiv/
+urban:
+  order: -1
+  title: "Urban"
+  url: /urban/
+wasserstoff:
+  order: -1
+  title: "Wasserstoff"
+  url: /wasserstoff/
+

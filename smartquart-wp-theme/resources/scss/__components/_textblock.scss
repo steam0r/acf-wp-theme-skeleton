@@ -1,0 +1,30 @@
+.textblock {
+  padding-top: 60px;
+  @include tablet-portrait-and-below() {
+    padding-top: 20px;
+    width: 100%;
+  }
+  padding-bottom: 20px;
+  @include font-medium();
+  width: 70%;
+  color: schemeColor('primary-two', 'v1');
+
+  .headline {
+    font-family: $font-bold;
+    font-weight: bold;
+    color: schemeColor('primary-one', 'v1');
+  }
+
+  .text {
+    a {
+      font-family: $font-bold;
+      font-weight: bold;
+      color: schemeColor('primary-one', 'v1');
+    }
+    @include tablet-portrait-and-below() {
+      iframe {
+        width: 100%;
+      }
+    }
+  }
+}

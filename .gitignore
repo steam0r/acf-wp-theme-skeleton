@@ -1,0 +1,8 @@
+.htaccess
+node_modules
+config/config.php
+target/
+.idea/
+*.iml
+vendor/
+release.json

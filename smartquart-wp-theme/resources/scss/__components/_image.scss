@@ -1,0 +1,22 @@
+.picture {
+  @include topMargin();
+  @include bottomMargin();
+
+  text-align: center;
+
+  .headline {
+    text-align: left;
+    color: schemeColor('primary-one', 'v1');
+    @include font-big();
+  }
+
+  .subtext {
+    text-align: left;
+    color: schemeColor('primary-one', 'v1');
+    @include font-bigger();
+  }
+
+  img {
+    width: 100%;
+  }
+}

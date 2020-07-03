@@ -1,0 +1,85 @@
+.ideaform {
+
+  display: flex;
+  flex-direction: row;
+
+  .logo {
+    width: 40%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 50px;
+    @include tablet-portrait-and-below() {
+      display: none;
+    }
+  }
+
+  .form {
+    flex-basis: 60%;
+    @include tablet-portrait-and-below() {
+      flex-basis: 100%;
+    }
+
+    .acf-fields > .acf-field {
+      border: none;
+      padding: 15px 0 0 0;
+    }
+
+    .acf-notice.-dismiss {
+      display: none;
+    }
+
+    .updated {
+      border: 1px solid schemeColor('grid-power', 'v1');
+      background-color: schemeColor('primary-one', 'v1');
+      color: white;
+      @include font-medium();
+      text-align: center;
+    }
+
+    .acf-field {
+      .acf-label {
+        label {
+          font-weight: normal;
+        }
+      }
+
+      input, textarea {
+        border: 1px solid schemeColor('primary-one', 'v1');
+        border-radius: 5px;
+        outline: none !important;
+      }
+    }
+
+    .acf-form-submit {
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: row;
+      margin-top: 10px;
+
+      input {
+        @include font-medium();
+        min-width: 200px;
+        margin: auto;
+        background-color: #1cd67c;
+        border-radius: 50px;
+        color: #fff;
+        padding-top: 9px;
+        padding-bottom: 7px;
+        padding-left: 20px;
+        position: relative;
+        border: none;
+        margin-bottom: 20px;
+      }
+
+      input[type=submit] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+      }
+    }
+  }
+
+
+}

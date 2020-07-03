@@ -1,0 +1,38 @@
+$colors: (
+        primary-one-v1: rgb(28, 214, 124),
+        primary-one-v2: rgb(28, 214, 124),
+        primary-two-v1: rgb(109, 47, 113),
+        primary-two-v2: rgb(109, 47, 113),
+        primary-three-v1: rgb(255, 255, 255),
+        primary-three-v2: rgb(255, 255, 255),
+        primary-four-v1: rgb(255, 255, 255),
+        primary-four-v2: rgb(235, 245, 255),
+        secondary-one-v1: rgb(227, 224, 0),
+        secondary-one-v2: rgb(227, 224, 0),
+        secondary-two-v1: rgb(92, 193, 203),
+        secondary-two-v2: rgb(92, 193, 203),
+        secondary-three-v1: rgb(0, 117, 84),
+        secondary-three-v2: rgb(0, 117, 84),
+        secondary-four-v1: rgb(232, 80, 40),
+        secondary-four-v2: rgb(255, 115, 133),
+        secondary-five-v1: rgb(235, 245, 255),
+        secondary-five-v2: rgb(176, 4, 2),
+        grid-power: #007554,
+        grid-gas: #E3E000,
+        grid-hydrogen: #5CC1CB,
+        grid-data: #6D2F71,
+        grid-mobility: #ff7385,
+        grid-temperature: #B00402,
+);
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color;
+  }
+}
+
+@each $name, $color in $colors {
+  .background-#{$name} {
+    background-color: $color;
+  }
+}

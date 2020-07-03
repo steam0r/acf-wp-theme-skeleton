@@ -1,0 +1,3 @@
+@function schemeColor($color, $scheme) {
+  @return map_get($colors, $color + '-' + $scheme);
+}

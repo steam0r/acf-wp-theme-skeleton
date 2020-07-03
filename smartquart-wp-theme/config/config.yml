@@ -1,0 +1,5 @@
+config:
+  update:
+    token: "319626e4d65e24b862f258da66caa86f9d6d395b"
+  site:
+    menu: true

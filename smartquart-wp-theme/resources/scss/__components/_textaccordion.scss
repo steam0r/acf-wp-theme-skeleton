@@ -1,0 +1,17 @@
+.textaccordion {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  @include font-bigger();
+
+  .item {
+    .headline {
+      color: schemeColor('primary-one', 'v1');
+      .arrow {
+        pointer-events: none;
+      }
+    }
+    .text {
+      display: none;
+    }
+  }
+}

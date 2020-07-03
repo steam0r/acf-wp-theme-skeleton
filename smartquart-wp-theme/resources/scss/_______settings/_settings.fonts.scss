@@ -1,0 +1,36 @@
+@import "../______tools/tools.functions";
+
+$font-primary: "regular", Arial, sans-serif;
+$font-light: "light", Arial, sans-serif;
+$font-medium: "medium", Arial, sans-serif;
+$font-bold: "bold", Arial, sans-serif;
+
+$font-primary-weight: (
+        "light": 300,
+        "regular": 400,
+        "medium": 500,
+        "bold": 700,
+);
+
+$font-primary-color: schemeColor('primary-two', 'v1');
+$font-secondary-color: schemeColor('primary-one', 'v1');
+
+$font-size-small: 1.2em;
+$font-size-medium: 1.5em;
+$font-size-bigger: 2em;
+$font-size-big: 3em;
+$font-size-extra: 5em;
+
+$font-size-small-mobile: 1.1em;
+$font-size-medium-mobile: 1.2em;
+$font-size-bigger-mobile: 1.4em;
+$font-size-big-mobile: 2em;
+$font-size-extra-mobile: 2.5em;
+
+$font-primary-size-smallest: 10px;
+$font-primary-size-smaller: 11px;
+$font-primary-size-small: 12px;
+$font-primary-size-normal: 13px;
+$font-primary-size-big: 14px;
+$font-primary-size-bigger: 15px;
+$font-primary-size-biggest: 16px;

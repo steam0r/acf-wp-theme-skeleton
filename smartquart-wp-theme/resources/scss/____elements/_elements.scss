@@ -1,0 +1,19 @@
+// these files contain styling of general html elements (i.e. input { ...}) free of context
+
+@import "header";
+@import "footer";
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: schemeColor('primary-one', 'v1');
+}
+
+section {
+  width: 100%;
+  min-height: 200px;
+  clear: both;
+}
+
+[data-click] {
+  cursor: pointer;
+}

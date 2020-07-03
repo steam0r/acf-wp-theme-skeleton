@@ -1,0 +1,45 @@
+.quotes {
+  color: schemeColor('primary-three', 'v1');
+
+  .quote {
+
+    display: flex;
+    @include tablet-portrait-and-below() {
+      display: block;
+    }
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+    .image {
+      flex-basis: 20%;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      @include tablet-portrait-and-below() {
+        width: 100%;
+        height: 100px;
+        background-position: left;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      flex-basis: 80%;
+      @include font-medium();
+      @include tablet-portrait-and-up() {
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+
+      .text {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+

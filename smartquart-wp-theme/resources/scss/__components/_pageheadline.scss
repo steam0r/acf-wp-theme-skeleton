@@ -1,0 +1,15 @@
+.pageheadline {
+  @include align-with-header();
+  min-height: 175px;
+  @include font-extra();
+  font-family: $font-bold;
+  padding-top: 40px;
+  color: schemeColor('primary-one', 'v1');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 250px;
+  @include tablet-portrait-and-below() {
+    height: 180px;
+  }
+}
