@@ -17,11 +17,12 @@
 - edit `config/config.yml`
 - - `config.theme.slug`, give your theme a name (also change this in composer.json)
 - - `config.release.check`, enable checking for updates of the theme on github
-- - `config.release.token`, put your github token here
+- - `config.release.token`, put your github secret that holds your token here
 - - `config.site.create_pages`, enable this to assure pages in pages.yml are being created
 - - `config.admin.show_acf`, enable this to show the acf admin-menu entry
 - - `config.admin.hide_editor`, hide the guttenberg editor in the editing of pages (stays for blog posts)
 - edit `style.css` to put your theme name and info there
+- make sure your repo has a secret named `wordpress_update_token` with a token that has `repo` access to the repository (create [here](https://github.com/settings/tokens))
 
 ## development
 
@@ -96,6 +97,10 @@
 - theme is in `target/target.zip`
 
 ## build release on github
+- make sure your repo has a secret named `wordpress_update_token` with a token that has `repo` access to the repository (create here: https://github.com/settings/tokens)
 - `npm run release` or `grunt release` (increments patch version number by 1, you can use `npm run release:minor` and `npm run release:major`)
 - `git checkout -b release/<versionnumber>`
 - `git push`
+- github action should build the plugin and put a downloadable zipfile on the "releases" page
+- check your wordpress installation for updates on themes and plugins
+- update the theme in wordpress
