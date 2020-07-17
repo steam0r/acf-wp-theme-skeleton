@@ -82,9 +82,9 @@
 - edit the `Content` fieldgroup
 - edit the `Contentblocks` field
 - add a `Layout` with your required fields, name it i.e. `newlayout` (in the "Name" field)
-- create `resources/templates/patials/newlayout.php`
+- create `resources/templates/partials/newlayout.php`
 - create `resources/scss/components/_newlayout.scss` (notice the underscore)
-- add `@import "textblock";` to `resources/scss/components/_components.scss`
+- add `@import "newlayout";` to `resources/scss/components/_components.scss`
 - add some html to the php-file, preferrably suround it with a `<div class="newlayout"></div>`
 - add some styles to the scss file, contained into `.newlayout {}`
 - add the new layout to any wordpress page using the "add row" button in the ACF module on the page editor 
