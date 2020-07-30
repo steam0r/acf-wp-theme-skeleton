@@ -9,7 +9,7 @@ wordpress:
   volumes:
     - ./:/var/www/html/wp-content/themes/acf-wp-theme-skeleton
     - ./scripts/docker_php_config.ini:/usr/local/etc/php/conf.d/uploads.ini
-    - ./scripts/.htaccess:/var/www/html/.htaccess
+    - ./scripts/htaccess:/var/www/html/.htaccess
 wordpress_db:
   image: mysql:5.6
   ports:
