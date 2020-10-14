@@ -29,7 +29,7 @@
 ### run docker image
 - `docker-compose up`
 - make sure `config/fieldgroups` is writable (`chmod 777 config/fieldgroups`)
-- make sure `config/fieldgroups/*.json` are writable (`chmod 666 config/fieldgroups/*.json`)
+- make sure `config/fieldgroups/*.json` are writable (`sudo chmod 666 config/fieldgroups/*.json`)
 - first time:
 - - go to `localhost:8080`, install wordpress
 - - log in, activate theme
@@ -94,7 +94,7 @@
 ## build release locally
 - `npm run package` or `grunt package`
 - `ls -a target/`
-- theme is in `target/target.zip`
+- theme is in `target/theme.zip`
 
 ## build release on github
 - make sure your repo has a secret named `wordpress_update_token` with a token that has `repo` access to the repository (create here: https://github.com/settings/tokens)
