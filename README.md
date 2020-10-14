@@ -95,6 +95,7 @@
 - `npm run package` or `grunt package`
 - `ls -a target/`
 - theme is in `target/theme.zip`
+- this will create a directory with your themename in `./` add this to your `.gitignore`
 
 ## build release on github
 - make sure your repo has a secret named `wordpress_update_token` with a token that has `repo` access to the repository (create here: https://github.com/settings/tokens)
